@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="Emmanuel Bama de Billet Express" version="0.1" shortdescription="Arret de bus SOTRAMA" description="Pour cartographie les arrets de bus a Bamako, Mali">
+
+
+	<item name="SOTRAMA" type="node" icon="presets/transport/bus_old.svg">
+		<label text="SOTRAMA platform"/>
+		<label text="---------------------------"/>
+		<label text="Exact lieux de arret de bus"/>
+		<label text="---------------------------"/>
+
+		<key key="source" value="survey 2019 - SOTRAMA / World Bank"/>
+		<key key="public_transport" value="platform"/>
+		<key key="highway" value="bus_stop"/>
+
+		<text key="name" text="Nome de Arret de bus" default="" delete_if_empty="true"/>
+		<check key="official_status" text="Unofficial: no pole / no shelter" delete_if_empty="true" value_on="unofficial"/>
+		<combo key="shelter" text="Pole or shelter" values="no, yes" display_values="Pole, Shelter"/>
+		<check key="bench" text="Banc" delete_if_empty="true" value_on="yes"/>
+		<check key="lit" text="eclairage" delete_if_empty="true" value_on="yes"/>
+	</item>
+
+</presets>
